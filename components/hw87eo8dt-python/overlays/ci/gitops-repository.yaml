@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: hw87eo8dt-python-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/hw87eo8dt-python-gitops

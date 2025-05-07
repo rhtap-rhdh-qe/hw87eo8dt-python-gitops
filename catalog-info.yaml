@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: hw87eo8dt-python-gitops
+  description: This is GitOps manifest for hw87eo8dt-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=hw87eo8dt-python
+    backstage.io/kubernetes-id: hw87eo8dt-python 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: hw87eo8dt-python
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:hw87eo8dt-python
